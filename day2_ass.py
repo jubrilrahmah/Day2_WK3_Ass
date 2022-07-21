@@ -16,11 +16,23 @@ class Car:
         self.body_colour = body_colour
         self.door = door
 
+#creating method
+    def c_tyre(self):
+        return "The car tyre is made of {}". format(self.tyre)
+
+    def engine_type(self):
+        return "it is a {} engine type" .format(self.engine)
+
+    def door_no(self):
+        return "The car has {} doors". format(self.door)
+
 # creating instance of class
 toyota_matrix = Car("Bridgestone", "four cylinder", "Petrol", "red", 4)
 
 #Another instance of class
 venza = Car("Pirelli", "four cylinder", "diesel", "white", 4 )
+
+print( "\n", venza.engine_type())
 
 #priniting attribute from first instance
 print("\nToyota matrix has ",toyota_matrix.tyre,"tyres", 
