@@ -21,7 +21,7 @@ class Car:
         return "The car tyre is made of {}". format(self.tyre)
 
     def engine_type(self):
-        return "it is a {} engine type" .format(self.engine)
+        return "It is a {} engine type" .format(self.engine)
 
     def door_no(self):
         return "The car has {} doors". format(self.door)
@@ -32,6 +32,7 @@ toyota_matrix = Car("Bridgestone", "four cylinder", "Petrol", "red", 4)
 #Another instance of class
 venza = Car("Pirelli", "four cylinder", "diesel", "white", 4 )
 
+#printing using the method
 print( "\n", venza.engine_type())
 
 #priniting attribute from first instance
